@@ -37,6 +37,11 @@ const connect = function () {
   conn.on('connect', () => {
     console.log('You connected successfully');
     conn.write('Name: Jus');
+    // conn.write("Move: up");
+    // setTimeout(() =>{
+    //   conn.write("Move: left");
+    // },2000);
+    
   });
 
 
