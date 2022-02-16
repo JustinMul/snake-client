@@ -34,6 +34,11 @@ const connect = function () {
   // interpret incoming data as text
   conn.setEncoding("utf8");
 
+  conn.on('connect', () => {
+    console.log('You connected successfully');
+    conn.write('Name: Jus');
+  });
+
 
   //returns error message for getting kicked
   conn.on("data", (data) => {
